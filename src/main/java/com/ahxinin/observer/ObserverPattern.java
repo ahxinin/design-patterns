@@ -7,11 +7,11 @@ package com.ahxinin.observer;
 public class ObserverPattern {
 
     public static void main(String[] args){
-        ConcreteSubject subject = new ConcreteSubject();
+        Subject subject = new ConcreteSubject();
         Observer observerA = new ConcreteObserverA();
         Observer observerB = new ConcreteObserverB();
         subject.add(observerA);
         subject.add(observerB);
-        subject.setState(1);
+        subject.notifys();
     }
 }
