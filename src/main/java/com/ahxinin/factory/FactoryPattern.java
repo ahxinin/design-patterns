@@ -1,6 +1,7 @@
 package com.ahxinin.factory;
 
 /**
+ * 工厂模式
  * @Author: hexin
  * @Date: 2021/1/25
  */

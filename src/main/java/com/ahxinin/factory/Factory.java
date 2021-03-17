@@ -7,5 +7,5 @@ package com.ahxinin.factory;
  */
 public interface Factory {
 
-    public Product createProduct();
+    Product createProduct();
 }

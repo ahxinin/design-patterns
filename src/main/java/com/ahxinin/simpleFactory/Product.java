@@ -1,9 +1,8 @@
-package com.ahxinin.factory;
+package com.ahxinin.simpleFactory;
 
 /**
- * 抽象产品
  * @Author: hexin
- * @Date: 2021/1/25
+ * @Date: 2021/3/17
  */
 public interface Product {
 
