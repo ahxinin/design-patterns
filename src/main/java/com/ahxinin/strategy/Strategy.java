@@ -8,5 +8,5 @@ package com.ahxinin.strategy;
 public interface Strategy {
 
     //策略方法
-    public void algorithm();
+    void algorithm();
 }

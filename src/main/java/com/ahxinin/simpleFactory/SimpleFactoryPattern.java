@@ -5,7 +5,7 @@ package com.ahxinin.simpleFactory;
  * @Author: hexin
  * @Date: 2021/3/17
  */
-public class Client {
+public class SimpleFactoryPattern {
 
     public static void main(String[] args){
         SimpleFactory simpleFactory = new SimpleFactory();

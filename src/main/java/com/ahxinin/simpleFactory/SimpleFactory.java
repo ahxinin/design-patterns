@@ -11,8 +11,7 @@ public class SimpleFactory {
             return new ProductA();
         } else  if (type.equals("B")){
             return new ProductB();
-        } else {
-            return new ConcreteProduct();
         }
+        return null;
     }
 }

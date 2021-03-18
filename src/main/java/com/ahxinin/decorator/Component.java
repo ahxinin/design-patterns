@@ -7,5 +7,5 @@ package com.ahxinin.decorator;
  */
 public interface Component {
 
-    public void operation();
+    void operation();
 }

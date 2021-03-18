@@ -1,6 +1,7 @@
 package com.ahxinin.decorator;
 
 /**
+ * 装饰模式
  * @Author: hexin
  * @Date: 2021/1/25
  */

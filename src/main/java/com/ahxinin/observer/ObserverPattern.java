@@ -1,6 +1,7 @@
 package com.ahxinin.observer;
 
 /**
+ * 观察者模式
  * @Author: hexin
  * @Date: 2021/1/20
  */
