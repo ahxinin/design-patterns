@@ -1,4 +1,4 @@
-package com.ahxinin.simpleFactory;
+package com.ahxinin.simplefactory;
 
 /**
  * @Author: hexin

@@ -1,4 +1,4 @@
-package com.ahxinin.simpleFactory;
+package com.ahxinin.simplefactory;
 
 /**
  * 客户端
