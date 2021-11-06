@@ -12,14 +12,14 @@ import java.util.Map;
  */
 public class RuleConfigParseFactory {
 
-    private static final Map<String,IRuleConfigParser> cachedParsers = new HashMap<>();
+    private static final Map<String,IRuleConfigParser> CACHED_PARSERS = new HashMap<>();
 
     static {
-        cachedParsers.put("json", new JsonRuleConfigParser());
-        cachedParsers.put("xml", new XmlRuleConfigParser());
+        CACHED_PARSERS.put("json", new JsonRuleConfigParser());
+        CACHED_PARSERS.put("xml", new XmlRuleConfigParser());
     }
 
     public static IRuleConfigParser createParse(String configFormat){
-        return cachedParsers.get(configFormat);
+        return CACHED_PARSERS.get(configFormat);
     }
 }

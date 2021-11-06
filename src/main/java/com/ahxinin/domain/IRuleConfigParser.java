@@ -6,5 +6,5 @@ package com.ahxinin.domain;
  */
 public interface IRuleConfigParser {
 
-    public RuleConfig parse(String content);
+    RuleConfig parse(String content);
 }
