@@ -1,10 +1,10 @@
-package com.ahxinin.domain;
+package com.ahxinin.factory.domain;
 
 /**
  * @author : hexin
  * @date : 2021-10-31
  */
-public class JsonRuleConfigParser implements IRuleConfigParser{
+public class XmlRuleConfigParser implements IRuleConfigParser{
 
     @Override
     public RuleConfig parse(String content) {

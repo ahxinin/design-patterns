@@ -1,6 +1,6 @@
-package com.ahxinin.factory;
+package com.ahxinin.factory.completefactory;
 
-import com.ahxinin.domain.IRuleConfigParser;
+import com.ahxinin.factory.domain.IRuleConfigParser;
 
 /**
  * @author : hexin

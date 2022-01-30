@@ -1,8 +1,7 @@
-package com.ahxinin.factory;
+package com.ahxinin.factory.completefactory;
 
-import com.ahxinin.domain.IRuleConfigParser;
-import com.ahxinin.domain.JsonRuleConfigParser;
-import com.ahxinin.domain.XmlRuleConfigParser;
+import com.ahxinin.factory.domain.IRuleConfigParser;
+import com.ahxinin.factory.domain.XmlRuleConfigParser;
 
 /**
  * @author : hexin

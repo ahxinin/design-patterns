@@ -1,7 +1,7 @@
-package com.ahxinin.factory;
+package com.ahxinin.factory.completefactory;
 
-import com.ahxinin.domain.IRuleConfigParser;
-import com.ahxinin.domain.RuleConfig;
+import com.ahxinin.factory.domain.IRuleConfigParser;
+import com.ahxinin.factory.domain.RuleConfig;
 
 /**
  * @author : hexin

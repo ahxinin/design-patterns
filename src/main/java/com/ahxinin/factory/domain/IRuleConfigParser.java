@@ -1,4 +1,4 @@
-package com.ahxinin.domain;
+package com.ahxinin.factory.domain;
 
 /**
  * @author : hexin

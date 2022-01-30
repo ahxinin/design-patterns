@@ -1,4 +1,4 @@
-package com.ahxinin.factory;
+package com.ahxinin.factory.completefactory;
 
 import java.util.HashMap;
 import java.util.Map;
