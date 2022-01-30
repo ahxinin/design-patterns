@@ -5,7 +5,7 @@ package com.ahxinin.template;
  * @description: 执行入口
  * @date : 2022-01-30
  */
-public class Run {
+public class TemplatePattern {
 
     public void test(){
         AbstractClass abstractClass = new ConcreteClass1();
