@@ -1,4 +1,4 @@
-package com.ahxinin.strategy;
+package com.ahxinin.strategy.example;
 
 import java.util.HashMap;
 import java.util.Map;
