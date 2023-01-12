@@ -31,8 +31,9 @@ public class ConstructorArg {
 
         public ConstructorArg build(){
             if (!isRef){
-                type = Class.
+                type = ConstructorArg.class;
             }
+            return null;
         }
     }
 
