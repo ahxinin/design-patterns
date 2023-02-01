@@ -1,4 +1,4 @@
-package com.ahxinin.strategy.example;
+package com.ahxinin.strategy.simple;
 
 /**
  * 抽象策略类

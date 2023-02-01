@@ -1,8 +1,7 @@
 package com.ahxinin;
 
-import com.ahxinin.chain.ChainExecutor;
-import com.ahxinin.chain.ItemRequest;
-import com.ahxinin.chain.ValidResult;
+import com.ahxinin.strategy.simple.Strategy;
+import com.ahxinin.strategy.simple.StrategyFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,23 +11,22 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * @author : Kane
- * @description: chain测试入口
- * @date : 2023-01-29
+ * 策略模式
+ * @Author: hexin
+ * @Date: 2021/1/22
  */
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-public class ChainTest {
+public class StrategySimpleTest {
 
     @Autowired
-    private ChainExecutor chainExecutor;
+    private StrategyFactory strategyFactory;
 
     @Test
-    public void chainTest(){
-        ItemRequest itemRequest = new ItemRequest();
-        itemRequest.setName("111");
-        ValidResult validResult = chainExecutor.execute(itemRequest);
-        log.info("validResult:"+validResult.getMessage());
+    public void test(){
+        String type = "A";
+        Strategy strategy = strategyFactory.getStrategy(type);
+        strategy.algorithm();
     }
 }
