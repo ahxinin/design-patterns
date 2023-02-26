@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * @author : Kane
  * @description: chain适配器
  * @date : 2023-01-29
  */

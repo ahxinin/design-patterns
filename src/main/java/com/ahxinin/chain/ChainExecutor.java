@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 /**
- * @author : Kane
  * @description: chain执行器
  * @date : 2023-01-29
  */

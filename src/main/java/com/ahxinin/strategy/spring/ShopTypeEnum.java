@@ -3,7 +3,6 @@ package com.ahxinin.strategy.spring;
 import lombok.Getter;
 
 /**
- * @author : Kane
  * @description: 店铺类型
  * @date : 2023-02-01
  */

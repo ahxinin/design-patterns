@@ -1,7 +1,6 @@
 package com.ahxinin.strategy.spring;
 
 /**
- * @author : Kane
  * @description: 策略接口
  * @date : 2023-02-01
  */

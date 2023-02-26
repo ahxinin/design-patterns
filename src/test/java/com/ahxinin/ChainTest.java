@@ -12,7 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * @author : Kane
  * @description: chain测试入口
  * @date : 2023-01-29
  */

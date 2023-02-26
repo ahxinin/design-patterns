@@ -1,7 +1,6 @@
 package com.ahxinin.chain;
 
 /**
- * @author : Kane
  * @description: chain接口
  * @date : 2023-01-29
  */

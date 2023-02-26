@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * @author : Kane
  * @description: 商品请求参数
  * @date : 2023-01-29
  */

@@ -1,8 +1,7 @@
 package com.ahxinin.chain;
 
 /**
- * @author : Kane
- * @description: TODO
+ * @description: 抽象类
  * @date : 2023-01-29
  */
 public abstract class AbstractChainSupport implements Chain{

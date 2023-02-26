@@ -3,7 +3,6 @@ package com.ahxinin.chain;
 import org.springframework.stereotype.Component;
 
 /**
- * @author : Kane
  * @description: 商品校验
  * @date : 2023-01-29
  */
