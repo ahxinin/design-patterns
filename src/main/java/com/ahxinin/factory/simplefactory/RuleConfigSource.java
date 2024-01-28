@@ -4,10 +4,8 @@ import com.ahxinin.factory.domain.IRuleConfigParser;
 import com.ahxinin.factory.domain.RuleConfig;
 
 /**
- * @author : hexin
- * @date : 2021-10-31
+ * 简单工厂模式
  */
-
 public class RuleConfigSource {
 
     public RuleConfig load(String ruleConfigFilePath) {
