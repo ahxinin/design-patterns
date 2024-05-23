@@ -5,5 +5,5 @@ package com.ahxinin.decorator;
  */
 public interface ItemComponent {
 
-    public double checkoutPrice();
+    double checkoutPrice();
 }

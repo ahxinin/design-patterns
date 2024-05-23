@@ -1,12 +1,7 @@
-package com.ahxinin;
+package com.ahxinin.strategy;
 
-import cn.hutool.json.JSONUtil;
-import com.ahxinin.strategy.annotation.ItemList;
-import com.ahxinin.strategy.annotation.ItemQueryFactory;
-import com.ahxinin.strategy.annotation.ItemQueryService;
 import com.ahxinin.strategy.simple.Strategy;
 import com.ahxinin.strategy.simple.StrategyFactory;
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,16 +18,19 @@ import org.springframework.test.context.junit4.SpringRunner;
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-public class StrategyAnnotationTest {
+public class SimpleStrategyPatternTest {
 
     @Autowired
-    private ItemQueryFactory itemQueryFactory;
+    private StrategyFactory strategyFactory;
 
     @Test
     public void test(){
-        String name = "priceQueryService";
-        ItemQueryService itemQueryService = itemQueryFactory.getByName(name);
-        List<ItemList> itemLists = itemQueryService.query();
-        log.info(JSONUtil.toJsonStr(itemLists));
+        //策略A
+        Strategy strategyA = strategyFactory.getStrategy("A");
+        strategyA.algorithm();
+
+        //策略B
+        Strategy strategyB = strategyFactory.getStrategy("B");
+        strategyB.algorithm();
     }
 }

@@ -1,7 +1,5 @@
 package com.ahxinin.singleton;
 
-import java.util.concurrent.atomic.AtomicLong;
-
 /**
  * 单例模式
  */

@@ -1,9 +1,15 @@
-package com.ahxinin.decorator;
+package com.ahxinin;
+
+import com.ahxinin.decorator.BybtCouponDecorator;
+import com.ahxinin.decorator.ConcreteItemComponent;
+import com.ahxinin.decorator.FullReductionDecorator;
+import com.ahxinin.decorator.ItemComponent;
+import com.ahxinin.decorator.ShopDiscountDecorator;
 
 /**
- * 调用入口
+ * 装饰者模式测试类
  */
-public class userPayForItem {
+public class DecoratorPatternTest {
 
     public static void main(String[] args){
         ItemComponent itemComponent = new ConcreteItemComponent();

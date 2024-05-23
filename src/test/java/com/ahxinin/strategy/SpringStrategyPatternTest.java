@@ -1,13 +1,8 @@
-package com.ahxinin;
+package com.ahxinin.strategy;
 
-import cn.hutool.json.JSONUtil;
-import com.ahxinin.strategy.annotation.ItemList;
-import com.ahxinin.strategy.annotation.ItemQueryFactory;
-import com.ahxinin.strategy.annotation.ItemQueryService;
 import com.ahxinin.strategy.spring.ShopRankHandler;
 import com.ahxinin.strategy.spring.ShopRankHandlerFactory;
 import com.ahxinin.strategy.spring.ShopTypeEnum;
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,23 +12,30 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * 策略模式
+ * Spring ApplicationContext 方式实现策略模式
  * @Author: hexin
- * @Date: 2021/1/22
+ * @Date: 2024/5/23
  */
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-public class StrategySpringTest {
+public class SpringStrategyPatternTest {
 
     @Autowired
     private ShopRankHandlerFactory shopRankHandlerFactory;
 
     @Test
     public void test(){
-        String type = ShopTypeEnum.JD.getType();
-        ShopRankHandler shopRankHandler = shopRankHandlerFactory.getStrategy(type);
-        String rank = shopRankHandler.calculate();
-        log.info(rank);
+        //京东店铺
+        String jdType = ShopTypeEnum.JD.getType();
+        ShopRankHandler jdShopRankHandler = shopRankHandlerFactory.getStrategy(jdType);
+        String jdRank = jdShopRankHandler.calculate();
+        log.info("jdRank:{}", jdRank);
+
+        //淘宝店铺
+        String tbType = ShopTypeEnum.TB.getType();
+        ShopRankHandler tbShopRankHandler = shopRankHandlerFactory.getStrategy(tbType);
+        String tbRank = tbShopRankHandler.calculate();
+        log.info("tbRank:{}", tbRank);
     }
 }
