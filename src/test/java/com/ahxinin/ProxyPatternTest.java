@@ -1,11 +1,13 @@
-package com.ahxinin.proxy;
+package com.ahxinin;
+
+import com.ahxinin.proxy.Proxy;
 
 /**
- * 代理模式
+ * 代理模式测试类
  * @Author: hexin
- * @Date: 2021/1/22
+ * @Date: 2024/5/23
  */
-public class ProxyPattern {
+public class ProxyPatternTest {
 
     public static void main(String[] args){
         Proxy proxy = new Proxy();

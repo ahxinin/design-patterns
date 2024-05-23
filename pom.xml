@@ -18,6 +18,7 @@
         <junit.version>4.13.2</junit.version>
         <hutool.version>5.8.25</hutool.version>
         <fastjson2.version>2.0.50</fastjson2.version>
+        <leaf-core.version>1.1.0-SNAPSHOT</leaf-core.version>
     </properties>
 
     <dependencies>
@@ -76,6 +77,12 @@
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
             <version>${fastjson2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sankuai.inf.leaf</groupId>
+            <artifactId>leaf-core</artifactId>
+            <version>${leaf-core.version}</version>
         </dependency>
     </dependencies>
 

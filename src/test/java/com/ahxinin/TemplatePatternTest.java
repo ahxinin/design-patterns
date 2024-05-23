@@ -1,10 +1,13 @@
-package com.ahxinin.template;
+package com.ahxinin;
+
+import com.ahxinin.template.ExchangeOrderFlowService;
+import com.ahxinin.template.ReturnOrderFlowService;
 
 /**
- * @description: 测试类
- * @date : 2023-03-07
+ * @description: 模式方法模式测试类
+ * @date : 2024-05-23
  */
-public class OrderFlowTest {
+public class TemplatePatternTest {
 
     public static void main(String[] args){
         ExchangeOrderFlowService exchangeOrderFlowService = new ExchangeOrderFlowService();

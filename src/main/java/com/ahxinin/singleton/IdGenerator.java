@@ -1,7 +1,7 @@
 package com.ahxinin.singleton;
 
 /**
- * 单例模式
+ * 单例模式-创建实例
  */
 public class IdGenerator {
 
